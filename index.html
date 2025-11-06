@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="style.css">
     <style>
     
     </style>
@@ -51,7 +51,7 @@
   <!--Second Part-->
     <div style="height: 700px;">
       <div>
-        <img style="height: 800px; width: 100%;" src="front-view-woman-training-home (1).jpg"></img>
+        <img style="height: 800px; width: 100%;" src="images/front-view-woman-training-home (1).jpg"></img>
       </div>
       <div style="position: absolute; margin-top:-420px; margin-left: 50px;">
         <h1 style="color: #c84211;">Let's build the perfect <br> body with FitStudio</h1>
@@ -66,66 +66,85 @@
     </div>
 
     <!--Third Part-->
-    <div style="color: #c84211; margin-left: 50px; height: 100px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 150px; padding-top: 120px;">
-        <div>
-          <h2 class ="counter" data-bs-target="10" onscroll="IntersectionObserver">+10</h2>
-          <p>Years of Experience</p>
-        </div>
-        <div>
-          <h2 class ="counter" data-bs-target="250" onscroll="IntersectionObserver">+250</h2>
-          <p>Exercise Equipment</p>
-        </div>
-        <div>
-           <h2 class ="counter" data-bs-target="12000" onscroll="IntersectionObserver">+12k</h2> 
-           <p>Happy Customers</p>
-        </div>
-        <div>
-          <h2 class ="counter" data-bs-target="30" onscroll="IntersectionObserver">+30</h2>
-          <p>Expert Trainers</p>
-        </div>
-    </div>
+   <div class="stats-section text-center">
+  <div class="stat">
+    <h2 class="counter">+10</h2>
+    <p>Years of Experience</p>
+  </div>
+  <div class="stat">
+    <h2 class="counter">+250</h2>
+    <p>Exercise Equipment</p>
+  </div>
+  <div class="stat">
+    <h2 class="counter">+12k</h2>
+    <p>Happy Customers</p>
+  </div>
+  <div class="stat">
+    <h2 class="counter">+30</h2>
+    <p>Expert Trainers</p>
+  </div>
+</div>
 
-    <hr style="margin-top: 100px; margin-bottom: 0px;">
+
+    <hr style="margin-top: 0px; margin-bottom: 0px;">
 
     <!--Trainers section-->
-    <div id="trainers" style="margin-left: 50px; padding-top: 20px;">
-      <h2 style="color: #c84211;"><span style="color: #5e5e5e;">OUR</span> TRAINERS</h2>
-      <P style="color: #5e5e5e; margin-bottom:40px ;">Our trainers are well trained and certified in <br> fitness and dieting, to build your desired body.</P>
-     
-      <!--Trainers Bio-->
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; padding-right: 50px;"> 
-        <div class="container" >
-          <img style="width: 350px; height: 250px; margin-bottom: 30px;" src="strong-athletic-man-holding-weights.jpg" alt="">
-          <div style="padding-right: 12px; color: #5e5e5e;">
-            <h4>John Michael- <i> <span style="font-weight: 400; font-size:16px;">S&C Coach</span></i></h4>
-            <p>Specialises in powerlifting, agility, endurance, <br> explosiveness, sports-specific training. Focuses <br> on enhancing strength, power, agility, and <br>endurance, tailoring workouts to specific <br> athletic goals or sport requirements.</p>
-          </div>
-        </div>
-        
-        <div style="padding-top: 20px;">
-          <div style="padding-left:12px; padding-right: 12px; color: #5e5e5e;">
-            <h4>Samatha Raye- <i> <span style="font-weight: 400; font-size:16px;">Yoga Instructor</span></i></h4>
-            <p> Specialises in Yoga styles like Hatha, Vinyasa, <br> Ashtanga, and Yin yoga. Guides you through <br> a series of poses and breathing exercises aimed at improving flexibility, balance, mental clarity, and relaxation. </p>
-          </div>
-          <img style="width: 350px; height: 250px; margin-top: 60px;" src="bruce-mars-jY-GlbKeTDs-unsplash.jpg" alt="">
-        </div>
-        
-        <div>
-          <img style="width: 350px; height: 250px; margin-bottom: 30px;" src="sergio-kian-iOTpuZmK-VY-unsplash.jpg" alt="">
-          <div style=" padding-left: 12px; padding-right: 12px; color: #5e5e5e;" >
-            <h4>Henry Colesman- <i> <span style="font-weight: 400; font-size:16px;">Sports Coach</span></i></h4>
-            <p>Specialises in Sport Fitness. Works with <br> athletes to develop their skills, improve performance, and enhance teamwork. <br> Teaches specific sports techniques, strategies, <br> and rules. Monitors and evaluates individual and team performance during training and competitions.</p>
-          </div>
-        </div>
-        <div style="padding-top:20px;">
-          <div style=" padding-left: 12px; color: #5e5e5e;">
-            <h4>Lauren Daniels- <i> <span style="font-weight: 400; font-size:16px;">Recovery Coach</span></i></h4>
-            <p>Specialises in injury recovery, movement correction, and posture improvement. Focuses on restoring mobility, building joint stability, and preventing injuries through customised corrective programs.</p>
-          </div>
-          <img style="width: 350px; height: 250px; margin-top: 60px;" src="front-view-woman-training-home (1).jpg" alt="">
-        </div>
-      </div> 
+    <div id="trainers" class="trainers-section container py-5">
+  <h2 class="text-danger mb-3"><span class="text-secondary">OUR</span> TRAINERS</h2>
+  <p class="text-secondary mb-5">
+    Our trainers are well trained and certified in fitness and dieting,<br>
+    to build your desired body.
+  </p>
+
+  <div class="trainers-grid">
+    <div class="trainer-card">
+      <img src="images/strong-athletic-man-holding-weights.jpg" alt="John Michael" />
+      <div class="trainer-info">
+        <h4>John Michael - <i><span>S&C Coach</span></i></h4>
+        <p>
+          Specialises in powerlifting, agility, endurance, explosiveness,
+          sports-specific training. Focuses on enhancing strength, power,
+          and endurance, tailoring workouts to athletic goals.
+        </p>
+      </div>
     </div>
+
+    <div class="trainer-card">
+      <img src="images/bruce-mars-jY-GlbKeTDs-unsplash.jpg" alt="Samatha Raye" />
+      <div class="trainer-info">
+        <h4>Samatha Raye - <i><span>Yoga Instructor</span></i></h4>
+        <p>
+          Specialises in Hatha, Vinyasa, Ashtanga, and Yin yoga. Guides you
+          through poses and breathing exercises that improve flexibility,
+          balance, and relaxation.
+        </p>
+      </div>
+    </div>
+
+    <div class="trainer-card">
+      <img src="images/sergio-kian-iOTpuZmK-VY-unsplash.jpg" alt="Henry Colesman" />
+      <div class="trainer-info">
+        <h4>Henry Colesman - <i><span>Sports Coach</span></i></h4>
+        <p>
+          Works with athletes to develop skills, enhance teamwork, and
+          improve performance through sport-specific training and strategy.
+        </p>
+      </div>
+    </div>
+
+    <div class="trainer-card">
+      <img src="images/front-view-woman-training-home (1).jpg" alt="Lauren Daniels" />
+      <div class="trainer-info">
+        <h4>Lauren Daniels - <i><span>Recovery Coach</span></i></h4>
+        <p>
+          Specialises in injury recovery and movement correction, focusing
+          on mobility, joint stability, and preventive training.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
    <!--Pricing-->
     <div class="" style="padding-top: 40px; padding-bottom:40px ; background-color: #f4f4f4;" id="pricing" class="pricing">
@@ -176,46 +195,52 @@
 
      <!--Reviews-->
      <section class="review-section" id="reviews">
-    <h2 style="text-align: center; margin-bottom: 2rem;">What Our Clients Say</h2>
-    <div class="review-grid">
-      <div class="review-card">
-        <img src="https://i.pravatar.cc/100?img=11" alt="User 1">
-        <h3>John Doe</h3>
-        <div class="stars">★★★★★</div>
-        <p>The workouts are amazing! I've seen real results in just a few weeks.</p>
-      </div>
-      <div class="review-card">
-        <img src="https://i.pravatar.cc/100?img=12" alt="User 2">
-        <h3>Mike Johnson</h3>
-        <div class="stars">★★★★☆</div>
-        <p>Great trainers and an easy-to-use app. Highly recommend!</p>
-      </div>
-      <div class="review-card">
-        <img src="https://i.pravatar.cc/100?img=13" alt="User 3">
-        <h3>David Green</h3>
-        <div class="stars">★★★★★</div>
-        <p>Love the energy and the personalized routines. Best decision ever.</p>
-      </div>
-      <div class="review-card">
-        <img src="https://i.pravatar.cc/100?img=14" alt="User 4">
-        <h3>Chris O.</h3>
-        <div class="stars">★★★★☆</div>
-        <p>Very motivating and professional. The programs really work!</p>
-      </div>
-      <div class="review-card">
-        <img src="https://i.pravatar.cc/100?img=15" alt="User 5">
-        <h3>Emma Brown</h3>
-        <div class="stars">★★★★★</div>
-        <p>Helped me recover from an injury while staying fit. Fantastic!</p>
-      </div>
-      <div class="review-card">
-        <img src="https://i.pravatar.cc/100?img=16" alt="User 6">
-        <h3>Sarah Lee</h3>
-        <div class="stars">★★★★★</div>
-        <p>Everything is well structured and easy to follow. Love the vibe!</p>
-      </div>
+  <h2>What Our Clients Say</h2>
+  <div class="review-grid">
+    <div class="review-card">
+      <img src="https://i.pravatar.cc/100?img=11" alt="User 1">
+      <h3>John Doe</h3>
+      <div class="stars">★★★★★</div>
+      <p>The workouts are amazing! I've seen real results in just a few weeks.</p>
     </div>
-  </section>
+
+    <div class="review-card">
+      <img src="https://i.pravatar.cc/100?img=12" alt="User 2">
+      <h3>Mike Johnson</h3>
+      <div class="stars">★★★★☆</div>
+      <p>Great trainers and an easy-to-use app. Highly recommend!</p>
+    </div>
+
+    <div class="review-card">
+      <img src="https://i.pravatar.cc/100?img=13" alt="User 3">
+      <h3>David Green</h3>
+      <div class="stars">★★★★★</div>
+      <p>Love the energy and the personalized routines. Best decision ever.</p>
+    </div>
+
+    <div class="review-card">
+      <img src="https://i.pravatar.cc/100?img=14" alt="User 4">
+      <h3>Chris O.</h3>
+      <div class="stars">★★★★☆</div>
+      <p>Very motivating and professional. The programs really work!</p>
+    </div>
+
+    <div class="review-card">
+      <img src="https://i.pravatar.cc/100?img=15" alt="User 5">
+      <h3>Emma Brown</h3>
+      <div class="stars">★★★★★</div>
+      <p>Helped me recover from an injury while staying fit. Fantastic!</p>
+    </div>
+
+    <div class="review-card">
+      <img src="https://i.pravatar.cc/100?img=16" alt="User 6">
+      <h3>Sarah Lee</h3>
+      <div class="stars">★★★★★</div>
+      <p>Everything is well structured and easy to follow. Love the vibe!</p>
+    </div>
+  </div>
+</section>
+
   <!--Form-->
     <div class="" style="color: #5e5e5e; margin-top: 40px; margin-left: 50px; margin-right: 50px;" id="contact" class="contact container text-center">
         <h2 style="text-align: center;">Contact Us</h2>
@@ -233,10 +258,15 @@
             <button style="background-color: #c84211; border: none; color: whitesmoke; margin-left: 43%;" type="submit" class="btn">Send Message</button>
         </form>
       </div>
+     
+     
       <!--Footer-->
-     <footer>
-    &copy; 2025 FitStudio. All rights reserved. | Built for strong living.
-  </footer>
+    <footer class="footer">
+  <div class="footer-content">
+    &copy; 2025 <span class="brand">FitStudio</span>. All rights reserved. | Built for strong living.
+  </div>
+</footer>
+
     <script src="index.js"></script>
 
 </body>
